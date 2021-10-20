@@ -1,0 +1,177 @@
+/* 
+1. Posicionamiento
+2. Modelo de caja (Box model)
+3. Tipografia
+4. Estilos con temas visuales
+5. Miscelaneous (otros)
+ */
+
+:root {
+    /* Colores */
+    --linear-gradient : linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --warm-black-1: #282623;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #FFFFFF;
+
+    /* Tipografia */
+    --tipo-dmsans: 'DM Sans', sans-serif;
+    --tipo-inter: 'Inter', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+header {
+    background: var(--linear-gradient);
+    text-align: center;
+    width: 100%;
+    height: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header img {
+    height: 27px;
+}
+
+header h1 {
+    color: var(--just-white);
+    padding: 30px;
+    font-size: 2.4rem;
+}
+
+header p {
+    color: var(--soft-orange);
+    font-size: 1.4rem;
+    padding: 0 30px;
+}
+
+main {
+    /* text-align: center; */
+}
+
+#first-section {
+    background-color: var(--off-white);
+}
+
+#first-section .first-section__bitcoin-logo {
+    padding: 44px;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--off-white);
+}
+
+#first-section h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--warm-black);
+}
+
+#first-section__main-paragraf {
+    color: var(--grey);
+    text-align: center;
+    margin: 15px;
+    font-size: 1.4rem;
+}
+
+.first-section__costs .first-section__costs__coins {
+
+    margin: 0 auto;
+}
+
+.first-section__costs .first-section__costs__coins thead h2{
+    font-size: 1.8rem;
+    color: #FF9536;
+    padding: 10px;
+}
+
+.first-section__costs .first-section__costs__coins tbody {
+    background-color: var(--just-white);
+    font-family: var(--tipo-inter);
+}
+
+.coins__name {
+    font-size: 1.6rem;
+    padding: 10px 12px;
+}
+
+.coins__price {
+    font-size: 1.4rem;
+    padding: 11px 12px;
+    text-align: right;
+}
+
+.trending-price {
+    margin: 0 10px;
+}
+
+.first-section__costs .first-section__costs__coins__footer{
+    font-size: 1.2rem;
+    font-family: var(--tipo-inter);
+    color: var(--warm-black-1);
+    background-color: var(--soft-orange);
+    padding: 8px;
+    width: 113px;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+#coin__bitcoin {
+    border-radius: 10px 0 0 0;
+}
+
+#coin__bitcoin-price {
+    border-radius: 0 10px 0 0;
+}
+
+#coin__stellar {
+    border-radius: 0 0 0 10px;
+}
+
+#coin__stellar-price {
+    border-radius: 0 0 10px 0;
+}
+
+
+/* .first-section__list{
+    display: grid;
+    grid-template-columns: 101px 101px;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+.first-section__list ul{
+    list-style: none;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    font-family: var(--tipo-inter);
+}
+
+.first-section__list__prices .first-section__list__price-1 {
+    display: inline;
+} */
+
+
+
+
+
+
