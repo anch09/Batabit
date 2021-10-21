@@ -71,6 +71,7 @@ main {
 
 #first-section {
     background-color: var(--off-white);
+    /* height: max-content; */
 }
 
 #first-section .first-section__bitcoin-logo {
@@ -80,7 +81,7 @@ main {
     background-color: var(--off-white);
 }
 
-#first-section h1 {
+#first-section h2 {
     font-size: 2.4rem;
     text-align: center;
     color: var(--warm-black);
@@ -93,28 +94,37 @@ main {
     font-size: 1.4rem;
 }
 
-.first-section__costs .first-section__costs__coins {
+.first-section__stats .first-section__stats__coins {
 
     margin: 0 auto;
 }
 
-.first-section__costs .first-section__costs__coins thead h2{
+.first-section__stats .first-section__stats__coins thead h3, 
+.first-section__stats__comissions thead h3 {
     font-size: 1.8rem;
-    color: #FF9536;
     padding: 10px;
 }
 
-.first-section__costs .first-section__costs__coins tbody {
+#head-coins {
+    color: var(--bitcoin-orange);
+}
+
+#head-comissions {
+    color: var(--secondary-blue);
+}
+
+.first-section__stats .first-section__stats__coins tbody,
+.first-section__stats .first-section__stats__comissions tbody {
     background-color: var(--just-white);
     font-family: var(--tipo-inter);
 }
 
-.coins__name {
+.stats__name {
     font-size: 1.6rem;
     padding: 10px 12px;
 }
 
-.coins__price {
+.stats__price {
     font-size: 1.4rem;
     padding: 11px 12px;
     text-align: right;
@@ -124,34 +134,104 @@ main {
     margin: 0 10px;
 }
 
-.first-section__costs .first-section__costs__coins__footer{
+.first-section__stats {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; */
+}
+
+.first-section__stats__footer{
     font-size: 1.2rem;
     font-family: var(--tipo-inter);
     color: var(--warm-black-1);
-    background-color: var(--soft-orange);
     padding: 8px;
-    width: 113px;
+    width: fit-content;
     margin: 15px auto;
     border-radius: 10px;
 }
 
-#coin__bitcoin {
+#footer-coins {
+    background-color: var(--soft-orange);
+}
+
+#footer-comissions {
+    background-color: var(--soft-blue);
+}
+
+
+.first-stat {
     border-radius: 10px 0 0 0;
 }
 
-#coin__bitcoin-price {
+.first-stat-price {
     border-radius: 0 10px 0 0;
 }
 
-#coin__stellar {
+.last-stat {
     border-radius: 0 0 0 10px;
 }
 
-#coin__stellar-price {
+.last-stat-price {
     border-radius: 0 0 10px 0;
 }
 
+.first-section__stats .first-section__stats__comissions {
+    margin: 0 auto;
+}
 
+.first-section__stats__table {
+    padding: 20px;
+}
+
+#second-section {
+    background-color: var(--warm-black);
+}
+
+#second-section h2 {
+    margin: 0 auto;
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--just-white);
+    padding-top: 64px;
+    padding-bottom: 24px;
+}
+
+.second-section__main-p {
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #808080;
+    padding-bottom: 16px;
+}
+
+.second-section__container {
+    background-color: var(--warm-black-1);
+    margin: 16px auto;
+    width: 288px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.second-section__container img {
+    padding: 16px 18px 12px;
+}
+
+.second-section__container h3 {
+    font-size: 1.8rem;
+    color: var(--just-white);
+    padding: 0 16px;
+}
+
+.second-section__container p {
+    font-size: 1.4rem;
+    color: #808080;
+    padding: 10px 20px 22px 16px;
+}
+
+.second-section__main-container {
+    padding-bottom: 24px;
+}
 /* .first-section__list{
     display: grid;
     grid-template-columns: 101px 101px;
