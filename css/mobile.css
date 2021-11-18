@@ -287,7 +287,7 @@ main {
     margin: 16px auto;
     width: 90%;
     min-width: 288px;
-    max-width: 700px;
+    max-width: 400px;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
 }
@@ -370,7 +370,7 @@ main {
 
 .plans-container__slider {
     display: flex;
-    height: 316px;
+    height: 318px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
